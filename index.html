@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArtSphere</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0b0b16;
+    color:white;
+}
+
+/* Barra superior */
+header{
+    background:#111827;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    color:#9f7aea;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+nav a:hover{
+    color:#9f7aea;
+}
+
+/* Bienvenida */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#9f7aea;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#d1d5db;
+    font-size:20px;
+}
+
+/* Galería */
+.galeria{
+    padding:40px;
+}
+
+.galeria h2{
+    margin-bottom:20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1a1a2e;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.info{
+    padding:15px;
+}
+
+.likes{
+    color:#ff7aa2;
+}
+
+/* Subir arte */
+.subir{
+    padding:50px;
+}
+
+input,textarea{
+    width:100%;
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:white;
+}
+
+button{
+    margin-top:15px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#7c3aed;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#6d28d9;
+}
+
+/* Footer */
+footer{
+    margin-top:50px;
+    background:#111827;
+    padding:30px;
+    text-align:center;
+}
+
+.reportes{
+    margin-top:20px;
+}
+
+.reportes button{
+    background:#6b0000;
+    margin:10px;
+}
+
+.reportes button:hover{
+    background:#8b0000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎨 ArtSphere</div>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Explorar</a>
+        <a href="#">Artes destacadas</a>
+        <a href="#">Subir arte</a>
+        <a href="#">Mi perfil</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Bienvenido a ArtSphere</h1>
+    <p>Comparte tu creatividad con el mundo.</p>
+</section>
+
+<section class="galeria">
+    <h2>✨ Artes destacadas</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://picsum.photos/500/600?1">
+            <div class="info">
+                <h3>Paisaje mágico</h3>
+                <p class="likes">❤️ 245 Likes</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/500/600?2">
+            <div class="info">
+                <h3>Ciudad futurista</h3>
+                <p class="likes">❤️ 189 Likes</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/500/600?3">
+            <div class="info">
+                <h3>Personaje original</h3>
+                <p class="likes">❤️ 310 Likes</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="subir">
+    <h2>📤 Compartir tu arte</h2>
+
+    <input type="text" placeholder="Título del arte">
+
+    <textarea rows="5"
+    placeholder="Describe tu obra"></textarea>
+
+    <input type="file">
+
+    <button>Publicar Arte</button>
+</section>
+
+<footer>
+
+    <h3>ArtSphere © 2026</h3>
+    <p>Una comunidad para artistas digitales.</p>
+
+    <div class="reportes">
+        <button>🚨 Reportar error</button>
+        <button>⚠️ Reportar arte</button>
+    </div>
+
+</footer>
+
+</body>
+</html>
